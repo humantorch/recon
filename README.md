@@ -84,10 +84,10 @@ recon/
 
 ## Works Great with Glass
 
-If you use Obsidian, open this directory as a vault and install [Glass](https://github.com/humantorch/glass) — it embeds Claude Code directly in the sidebar so you can assess a role and take notes in the same window without switching apps.
+Recon's workspace is already plain markdown, so if you use Obsidian, just open this directory as a vault, no configuration needed. Pair it with [Glass](https://community.obsidian.md/plugins/blackglass) to run Claude Code sessions from inside Obsidian against that same vault — assess a role, take notes, and update your pipeline without switching apps.
 
 ---
 
 ## A Blackglass Project
 
-Recon is part of [Blackglass](https://blackglass.me) — tools for technical people who think carefully about how they work.
+Recon is part of [Blackglass](https://blackglass.me) — tools for technical people who think carefully about how they work. If you're an engineering manager rather than a job seeker, check out [Cadence](https://github.com/humantorch/cadence), the same kind of Claude Code workspace built for running an EM practice.
