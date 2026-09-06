@@ -1,0 +1,15 @@
+# Resume PDFs and personal documents
+resumes/*.pdf
+resumes/**/*.pdf
+outputs/*.pdf
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Obsidian (if using as a vault)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Editor
+.cursor/
