@@ -58,3 +58,5 @@ If the application is being submitted:
 3. Set status to `applied` and record the date
 
 Offer to create the file if it doesn't exist yet.
+
+If `context/github-project.md` has an Owner set, also update the matching project item's Pipeline Status to `Applied` (see that file for the exact commands). If no matching item exists yet, create one rather than skipping the sync. Skip silently if Owner is blank.

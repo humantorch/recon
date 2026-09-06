@@ -44,7 +44,8 @@ If `context/profile.md` and `context/search-criteria.md` are still blank templat
 │   ├── profile.md                   # Who you are, background, preferences
 │   ├── search-criteria.md           # What you're looking for and hard nos
 │   ├── applications.md              # Master log of all roles
-│   └── assessed-rejections.md       # Roles already assessed and rejected
+│   ├── assessed-rejections.md       # Roles already assessed and rejected
+│   └── github-project.md            # Optional GitHub Project board config
 ├── resumes/
 │   ├── index.md                     # Resume versions and when to use each
 │   └── [your resume PDFs]
@@ -87,6 +88,14 @@ Thinking partner for difficult decisions, tricky conversations, or anything you 
 **Currently active pipeline:** See `context/applications.md`
 
 **Update this section** as your posture changes — active, paused, selective, etc.
+
+---
+
+## GitHub Project Board (optional)
+
+If `context/github-project.md` has an Owner configured, a GitHub Project board mirrors your pipeline as a visual Kanban view. `/assess` and `/apply` keep it in sync automatically, but status also changes in plenty of conversations that don't go through either command, a rejection email gets pasted in, a recruiter mentions a screen is scheduled, an offer comes in verbally.
+
+**Whenever you update a role file's Status field, for any reason, also sync the matching project item's Pipeline Status.** See `context/github-project.md` for the status mapping and the exact `gh` commands. If Owner is blank there, this entire section is a no-op, don't mention it or ask about it.
 
 ---
 

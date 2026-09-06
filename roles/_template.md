@@ -1,6 +1,6 @@
 # [Company] — [Role Title]
 
-**Status:** `flagged` / `applied` / `screen` / `interviewing` / `offer` / `rejected`
+**Status:** `flagged` / `applied` / `screen` / `interviewing` / `offer` / `rejected` / `withdrawn`
 **Applied:** YYYY-MM-DD
 **Last Activity:** YYYY-MM-DD
 **Source:** LinkedIn / Job board / Referral / Direct

@@ -100,6 +100,8 @@ Produce a structured assessment covering:
 
 If Go: offer to create a role file in `roles/flagged/` using the template. Populate the **URL** field with the same value used in Phase 4 (the canonical URL, or "none" if confirmed there isn't one) — the role file and the JD archive should always agree on the source URL.
 
+If `context/github-project.md` has an Owner set, also create a matching draft issue on the board titled `[Company] — [Role Title]` with Pipeline Status set to `Flagged` (see that file for the exact commands and status mapping). Skip silently if Owner is blank.
+
 If No-Go:
 - Close the assessment — don't soft-pedal it into a maybe
 - Append a row to `context/assessed-rejections.md` with: Company, Title, URL, one-line No-Go reason, today's date

@@ -32,6 +32,8 @@ For each role in `roles/flagged/`:
 **Closed**
 Brief summary count only — no detail needed unless asked
 
+If `context/github-project.md` has an Owner configured, mention the board URL once at the end of the summary as a reference (`github.com/users/[owner]/projects/[number]`) — don't fetch or re-render it, the markdown files above are already the full picture.
+
 ### Phase 3: Recommendations
 
 After the status summary:

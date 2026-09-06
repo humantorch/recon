@@ -19,7 +19,8 @@ Built for technical people who are serious about their search and want a system 
 ## Requirements
 
 - [Claude Code](https://claude.ai/code) — this is a Claude Code workspace, not a standalone app
-- That's it
+- [`gh` CLI](https://cli.github.com), authenticated — only if you want the optional GitHub Project board (see below)
+- Otherwise, that's it
 
 ## Setup
 
@@ -58,6 +59,14 @@ For `/apply` and `/prep`, just type the company name or role title, no need to k
 
 ---
 
+## Optional: GitHub Project Board
+
+The markdown files in `roles/` are always the source of truth, but if you want a visual Kanban view of your pipeline, `/setup` can create a GitHub Project board with a status field that mirrors your role files (Flagged → Applied → Screen → Interviewing → Offer / Rejected / Withdrawn). Once it's set up, `/assess` and `/apply` keep it in sync automatically, and status changes that happen in conversation, a rejection email, a recruiter update, get synced too.
+
+Purely optional, skip it during `/setup` and everything works exactly the same, just without the board. Configured in `context/github-project.md`.
+
+---
+
 ## How It Works
 
 Everything lives in plain markdown files. Claude Code reads them automatically when you open the workspace. Your profile and search criteria inform every assessment. Your application history is tracked in `context/applications.md`. Job descriptions are archived in `jd-archive/` before postings go dark.
@@ -72,7 +81,7 @@ No database. No backend. No account. Just files, Claude, and your job search.
 recon/
 ├── CLAUDE.md                   # Loaded automatically — the brain of the workspace
 ├── .claude/commands/           # Slash commands
-├── context/                    # Your profile, criteria, and application log
+├── context/                    # Your profile, criteria, application log, optional GitHub Project config
 ├── resumes/                    # Your resume versions (PDFs not tracked in git)
 ├── roles/                      # Per-role tracking files (flagged → applied → closed)
 ├── jd-archive/                 # Raw job descriptions, preserved

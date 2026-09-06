@@ -62,6 +62,24 @@ Ask:
 
 ---
 
+## Section 6: GitHub Project Board (optional)
+
+Ask:
+
+> "Last thing, optional. Do you want a GitHub Project board, a visual Kanban view of your pipeline that stays in sync with these files? Requires the `gh` CLI, installed and authenticated. Say no if you'd rather just use the markdown files, you can always set this up later."
+
+If no: skip to After All Sections, leave `context/github-project.md` blank.
+
+If yes:
+1. Check `gh auth status`. If not authenticated, tell the user to run `gh auth login` first and skip this section for now.
+2. Ask what to call the board (default: "Job Search").
+3. Create it: `gh project create --owner "@me" --title "[title]"` — capture the project number and owner from the output.
+4. Add the status field: `gh project field-create [number] --owner "@me" --name "Pipeline Status" --data-type SINGLE_SELECT --single-select-options "Flagged,Applied,Screen,Interviewing,Offer,Rejected,Withdrawn"`
+5. Write the owner and project number into `context/github-project.md`.
+6. Confirm: "Board created: [url]. I'll keep it in sync automatically as roles move through your pipeline."
+
+---
+
 ## After All Sections
 
 Write the following files based on the conversation:
@@ -69,6 +87,7 @@ Write the following files based on the conversation:
 1. `context/profile.md` — full professional profile using the template structure
 2. `context/search-criteria.md` — criteria, preferences, and hard nos
 3. `resumes/index.md` — resume version index (even if it's just one version)
+4. `context/github-project.md` — filled in only if Section 6 ran and the user opted in; otherwise leave it as-is (blank)
 
 Show the user each file after writing it and ask: "Does this look right? Anything to add or correct?"
 
